@@ -1,0 +1,10 @@
+streamlit
+streamlit_authenticator
+streamlit-option-menu
+streamlit-folium
+opencv-python
+Pillow
+requests
+folium
+
+scikit-learn
