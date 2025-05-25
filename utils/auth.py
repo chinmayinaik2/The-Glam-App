@@ -4,16 +4,17 @@ def login():
     credentials = {
         "usernames": {
             "admin": {
-                "email": "admin@example.com",
-                "name": "Admin",
-                "password": stauth.Hasher(["admin123"]).generate()[0]
+                "name": "Admin User",
+                "password": "$2b$12$ynPZQnsX7E9oXhUcCwqjC.4eM/vZ57FYXE3bVwrvcDVPInN9/BrDi"
             }
         }
     }
+
     authenticator = stauth.Authenticate(
         credentials,
-        "makeup_app_cookie",
-        "auth_key",
-        cookie_expiry_days=30
+        "makeup_app",
+        "abcdef",
+        cookie_expiry_days=1
     )
+
     return authenticator
